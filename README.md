@@ -11,7 +11,7 @@
 
 ## Модуль 6: Виртуализация
 
-6.1 [Виртуализация и облачные решения. AWS, GCP, Яндекс.Облако, Openstack]()
+6.1 [Виртуализация и облачные решения. AWS, GCP, Яндекс.Облако, Openstack](https://github.com/netology-code/sdvps-homeworks/commit/baf3d1269f139679bc8a4c12e2ea50762d1d4799)
 
 6.2 [Типы виртуализаций KVM, QEMU]()
 
