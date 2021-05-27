@@ -17,7 +17,7 @@
 
 6.3 [Docker](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03.md)
 
-6.4 [Docker. Часть 2]()
+6.4 [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04.md)
 
 6.5 [Kubernetes]()
 
