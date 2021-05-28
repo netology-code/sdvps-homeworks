@@ -11,11 +11,17 @@
 ## Модуль 6. Виртуализация
 
 6.1. [Виртуализация и облачные решения. AWS, GCP, Яндекс.Облако, Openstack](https://github.com/netology-code/sdvps-homeworks/blob/main/6-01.md)
+
 6.2. [Типы виртуализаций KVM, QEMU](https://github.com/netology-code/sdvps-homeworks/blob/main/6-02.md)
+
 6.3. [Docker](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03.md)
+
 6.4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04.md)
+
 6.5. [Kubernetes](https://github.com/netology-code/sdvps-homeworks/blob/main/6-05.md)
+
 6.6. [Kubernetes. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06.md)
+
 
 
 
