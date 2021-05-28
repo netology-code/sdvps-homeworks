@@ -21,7 +21,7 @@
 
 6.5 [Kubernetes]()
 
-6.6 [Kubernetes. Часть 2]()
+6.6 [Kubernetes. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06.md)
 
 
 ## Модуль 7: Автоматизация администрирования инфраструктуры
