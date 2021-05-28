@@ -23,7 +23,22 @@
 6.6. [Kubernetes. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06.md)
 
 
+## Модуль 7. Автоматизация администрирования инфраструктуры
 
+7.1. [Ansible]()
+
+7.2. [Terraform]()
+
+7.3. [Подъем инфраструктуры в Яндекс.Облаке]()
+
+
+## Модуль 8. Введение в DevOps
+
+7.1. [Что такое DevOps? CI/CD]()
+
+7.2. [Git / GitLab]()
+
+7.3. [Git / GitLab. Часть 2]()
 
 
 
