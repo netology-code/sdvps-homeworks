@@ -27,7 +27,7 @@
 
 7.1. [Ansible](https://github.com/netology-code/sdvps-homeworks/blob/main/7-01.md)
 
-7.2. [Terraform]()
+7.2. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md)
 
 7.3. [Подъем инфраструктуры в Яндекс.Облаке]()
 
