@@ -34,11 +34,11 @@
 
 ## Модуль 8. Введение в DevOps
 
-7.1. [Что такое DevOps? CI/CD]()
+8.1. [Что такое DevOps? CI/CD]()
 
-7.2. [Git / GitLab]()
+8.2. [Git / GitLab]()
 
-7.3. [Git / GitLab. Часть 2]()
+8.3. [Git / GitLab. Часть 2]()
 
 
 
