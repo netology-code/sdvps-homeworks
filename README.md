@@ -29,7 +29,7 @@
 
 7.2. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md)
 
-7.3. [Подъем инфраструктуры в Яндекс.Облаке]()
+7.3. [Подъем инфраструктуры в Яндекс.Облаке](https://github.com/netology-code/sdvps-homeworks/blob/main/7-03.md)
 
 
 ## Модуль 8. Введение в DevOps
