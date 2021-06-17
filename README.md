@@ -36,7 +36,7 @@
 
 8.1. [Что такое DevOps? CI/CD](https://github.com/netology-code/sdvps-homeworks/blob/main/8-01.md)
 
-8.2. [Git / GitLab]()
+8.2. [Git / GitLab](https://github.com/netology-code/sdvps-homeworks/blob/main/8-02.md)
 
 8.3. [Git / GitLab. Часть 2]()
 
