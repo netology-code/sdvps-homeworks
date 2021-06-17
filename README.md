@@ -34,7 +34,7 @@
 
 ## Модуль 8. Введение в DevOps
 
-8.1. [Что такое DevOps? CI/CD]()
+8.1. [Что такое DevOps? CI/CD](https://github.com/netology-code/sdvps-homeworks/blob/main/8-01.md)
 
 8.2. [Git / GitLab]()
 
