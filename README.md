@@ -11,35 +11,35 @@
 
 ## Модуль 6: Виртуализация
 
-6.1. [Виртуализация и облачные решения. AWS, GCP, Яндекс.Облако, Openstack]()
+6.1. [Виртуализация и облачные решения. AWS, GCP, Яндекс.Облако, Openstack](https://github.com/netology-code/sdvps-homeworks/blob/main/6-01.md)
 
-6.2. [Типы виртуализаций KVM, QEMU]()
+6.2. [Типы виртуализаций KVM, QEMU](https://github.com/netology-code/sdvps-homeworks/blob/main/6-02.md)
 
-6.3. [Docker]()
+6.3. [Docker](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03.md)
 
-6.4. [Docker. Часть 2]()
+6.4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04.md)
 
-6.5. [Kubernetes]()
+6.5. [Kubernetes](https://github.com/netology-code/sdvps-homeworks/blob/main/6-05.md)
 
-6.6. [Kubernetes. Часть 2.]()
+6.6. [Kubernetes. Часть 2.](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06.md)
 
 
 ## Модуль 7: Автоматизация администрирования инфраструктуры
 
-7.1. [Ansible]()
+7.1. [Ansible](https://github.com/netology-code/sdvps-homeworks/blob/main/7-01.md)
 
-7.2. [Terraform]()
+7.2. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md)
 
-7.3. [Подъем инфраструктуры в Яндекс.облаке]()
+7.3. [Подъем инфраструктуры в Яндекс.облаке](https://github.com/netology-code/sdvps-homeworks/blob/main/7-03.md)
 
 
 ## Модуль 8: Введение в DevOps
 
-7.1. [Git ]()
+7.1. [Git ](https://github.com/netology-code/sdvps-homeworks/blob/main/8-01.md)
 
-7.2. [Что такое DevOps? CI/CD]()
+7.2. [Что такое DevOps? CI/CD](https://github.com/netology-code/sdvps-homeworks/blob/main/8-02.md)
 
-7.3. [GitLab]()
+7.3. [GitLab](https://github.com/netology-code/sdvps-homeworks/blob/main/8-03.md)
 
 
 
