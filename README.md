@@ -28,11 +28,11 @@
 
 1. [Ansible. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/7-01.md).
 
-2. [Ansible. Часть 2]().
+2. [Ansible. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/7.1_part_2.md).
 
-2. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md).
+3. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md).
 
-3. [Подъём инфраструктуры в Yandex Cloud](https://github.com/netology-code/sdvps-homeworks/blob/main/7-03.md).
+4. [Подъём инфраструктуры в Yandex Cloud](https://github.com/netology-code/sdvps-homeworks/blob/main/7-03.md).
 
 
 ## Модуль: Введение в DevOps
