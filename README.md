@@ -26,7 +26,9 @@
 
 ## Модуль: Автоматизация администрирования инфраструктуры
 
-1. [Ansible](https://github.com/netology-code/sdvps-homeworks/blob/main/7-01.md).
+1. [Ansible. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/7-01.md).
+
+2. [Ansible. Часть 2]().
 
 2. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md).
 
