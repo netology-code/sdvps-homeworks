@@ -15,7 +15,7 @@
 
 2. [Типы виртуализации: KVM, QEMU](https://github.com/netology-code/sdvps-homeworks/blob/main/6-02.md).
 
-3. [Docker. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03.md).
+3. [Docker. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03-new.md).
 
 4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04.md).
 
