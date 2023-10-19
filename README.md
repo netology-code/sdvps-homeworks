@@ -13,11 +13,11 @@
 
 1. [Виртуализация и облачные решения: AWS, GCP, Yandex Cloud, OpenStack](https://github.com/netology-code/sdvps-homeworks/blob/main/6-01.md).
 
-2. [Типы виртуализации: KVM, QEMU](https://github.com/netology-code/sdvps-homeworks/blob/main/6-02.md).
+2. [Типы виртуализации: KVM, QEMU](https://github.com/netology-code/sdvps-homeworks/blob/main/6-02-new.md).
 
 3. [Docker. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-03-new.md).
 
-4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04.md).
+4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04-new.md).
 
 5. [Kubernetes. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-05.md).
 
@@ -30,7 +30,7 @@
 
 2. [Ansible. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/7.1_part_2.md).
 
-3. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02.md).
+3. [Terraform](https://github.com/netology-code/sdvps-homeworks/blob/main/7-02-new.md).
 
 4. [Подъём инфраструктуры в Yandex Cloud](https://github.com/netology-code/sdvps-homeworks/blob/main/7-03.md).
 
