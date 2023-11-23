@@ -19,9 +19,9 @@
 
 4. [Docker. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-04-new.md).
 
-5. [Kubernetes. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-05.md).
+5. [Kubernetes. Часть 1](https://github.com/netology-code/sdvps-homeworks/blob/main/6-05-new.md).
 
-6. [Kubernetes. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06.md).
+6. [Kubernetes. Часть 2](https://github.com/netology-code/sdvps-homeworks/blob/main/6-06-new.md).
 
 
 ## Модуль: Автоматизация администрирования инфраструктуры
