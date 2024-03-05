@@ -3,6 +3,8 @@ services:
   mysql:
     image: mariadb:10.6.4-focal
     command: "--default-authentication-plugin=mysql_native_password"
+    volumes:
+      - db_data:/var/lib/mysql
     networks: 
       wordpress:
         ipv4_address: 172.20.0.20
@@ -16,6 +18,8 @@ services:
   wordpress:
     depends_on: ["mysql"]
     image: wordpress:php8.2-apache
+    volumes:
+      - wp_data:/var/www/html
     networks: 
       wordpress:
         ipv4_address: 172.20.0.10
@@ -26,6 +30,10 @@ services:
       - WORDPRESS_DB_USER=wordpress
       - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD:-password}
       - WORDPRESS_DB_HOST=mysql
+
+volumes:
+  db_data: {}
+  wp_data: {}
 
 networks:
   wordpress:
