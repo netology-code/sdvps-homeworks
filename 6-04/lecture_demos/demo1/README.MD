@@ -42,6 +42,7 @@ docker restart prometheus
 
 https://grafana.com/grafana/dashboards/1860-node-exporter-full/
 https://www.yamllint.com/
+https://guifier.com/yaml
 https://github.com/samber/awesome-prometheus-alerts
 
 docker container rm -f prometheus && docker container rm -f node_exporter && docker container rm -f pushgateway && docker container rm -f grafana && docker container rm -f alertmanager
