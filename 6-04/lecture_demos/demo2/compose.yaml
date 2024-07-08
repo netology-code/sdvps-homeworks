@@ -1,0 +1,63 @@
+services:
+  mysql:
+    image: mariadb:10.6.4-focal
+    command: "--default-authentication-plugin=mysql_native_password"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks: ["wordpress"]
+    restart: always #no, on-failure , always(default), unless-stopped 
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_HOST="%"
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 512M
+        reservations:
+          memory: 256M
+
+
+  wordpress:
+    depends_on: ["mysql"]
+    image: wordpress:php8.2-apache
+    volumes:
+      - wp_data:/var/www/html
+    networks: ["wordpress"]
+    restart: always #no, on-failure , always(default), unless-stopped
+    # ports: ["8080:8080"]
+    environment:
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
+      - WORDPRESS_DB_HOST=mysql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -f http://127.0.0.1/wp-admin/install.php/ | grep 'Продолжить' || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 2
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    depends_on: ["mysql"]
+    ports: ["80:80"]
+    networks: ["wordpress"]
+
+
+#не забывайте удалять вольюмы если у вас были ошибки в проекте!  docker compose down -v
+volumes:
+  db_data: {}
+  wp_data: {}
+networks:
+  wordpress:
+    name: wordpress
+
