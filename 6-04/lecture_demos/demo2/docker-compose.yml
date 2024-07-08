@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server:
+    build: .
+    command: python snake.py
+    restart: unless-stopped
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./onlinesnake.template:/etc/nginx/conf.d/onlinesnake.template
+      - ./web/:/var/www/onlinesnake.fun/
+    ports:
+      - 8080:80
+    command: /bin/sh -c "cat /etc/nginx/conf.d/onlinesnake.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+ 

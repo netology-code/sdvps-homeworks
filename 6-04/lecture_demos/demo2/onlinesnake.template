@@ -1,0 +1,26 @@
+upstream ws {
+server server:8765;
+}
+
+server {
+listen 80 default_server;
+listen [::]:80 ipv6only=on;
+
+server_name onlinesnake.fun;
+charset utf-8;
+root /var/www/onlinesnake.fun;
+index index.html;
+
+location / {
+try_files $uri $uri/ =404;
+}
+
+location /websocket/ {
+proxy_pass http://ws/;
+proxy_http_version 1.1;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection "upgrade";
+proxy_read_timeout 86400;
+}
+
+}

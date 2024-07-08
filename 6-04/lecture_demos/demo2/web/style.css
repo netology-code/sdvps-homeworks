@@ -1,0 +1,54 @@
+#game-canvas {
+    margin: auto;
+    pad: 0;
+    display: block;
+}
+
+#main-heading, footer {
+    text-align: center;
+}
+
+.control-button {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+}
+
+#controls {
+    display: none;
+    padding-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 12rem;
+    margin: auto;
+}
+
+#controls-toggle {
+    display: none;
+    text-align: center;
+}
+
+#control-button-up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#control-button-down {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#control-button-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#control-button-right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#control-button-restart {
+    margin-top: 4rem;
+    grid-column: 2;
+    grid-row: 4;
+}
