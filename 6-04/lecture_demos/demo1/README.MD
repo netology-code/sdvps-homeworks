@@ -1,3 +1,5 @@
+docker rm -v -f $(docker ps -qa)
+
 docker network create prometheus-stack && docker network ls
 
 docker run -d \
