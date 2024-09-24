@@ -1,23 +1,3 @@
-#создаем облачную сеть
-resource "yandex_vpc_network" "develop" {
-  name = "develop-fops"
-}
-
-#создаем подсеть zone A
-resource "yandex_vpc_subnet" "develop_a" {
-  name           = "develop-fops-ru-central1-a"
-  zone           = "ru-central1-a"
-  network_id     = yandex_vpc_network.develop.id
-  v4_cidr_blocks = ["10.0.1.0/24"]
-}
-
-#создаем подсеть zone B
-resource "yandex_vpc_subnet" "develop_b" {
-  name           = "develop-fops-ru-central1-b"
-  zone           = "ru-central1-b"
-  network_id     = yandex_vpc_network.develop.id
-  v4_cidr_blocks = ["10.0.2.0/24"]
-}
 
 #считываем данные об образе ОС
 data "yandex_compute_image" "ubuntu_2204_lts" {
