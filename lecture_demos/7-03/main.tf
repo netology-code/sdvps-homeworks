@@ -138,13 +138,4 @@ resource "local_file" "from_resourse" {
   filename = "./hosts.ini"
 }
 
-output "ansible_ping" {
-  value="ansible -i ./hosts.ini all  -m ping -u user"
-}
-output "ansible_playbook" {
-  value="ansible-playbook -i ./hosts.ini test.yml"
-}
-output "Cloud_network_map" {
-  value="https://console.yandex.cloud/folders/b1gfu61oc15cb99nqmfe/vpc/network-map/current-folder"
-}
 
