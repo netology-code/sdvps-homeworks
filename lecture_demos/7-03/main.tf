@@ -124,7 +124,7 @@ resource "yandex_compute_instance" "web_b" {
   }
 }
 
-resource "local_file" "from_resourse" {
+resource "local_file" "inventory" {
   content  = <<-EOF
   [bastion]
   ${yandex_compute_instance.bastion.network_interface.0.nat_ip_address}
