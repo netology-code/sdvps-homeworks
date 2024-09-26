@@ -1,5 +1,18 @@
-variable "public_key" {
+variable "cloud_id" {
     type=string
-    default="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGiVcfW8Wa/DxbBNzmQcwn7hJOj7ji9eoTpFakVnY/AI webinar"
+    default="b1gn3ndpua1j6jaabf79"
+}
+variable "folder_id" {
+    type=string
+    default="b1gfu61oc15cb99nqmfe"
+}
+
+variable "test" {
+    type=map(number)
+    default={
+    cores         = 2
+    memory        = 1
+    core_fraction = 20
+  }
 }
 
