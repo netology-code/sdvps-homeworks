@@ -7,10 +7,10 @@
 7. Выполнить playbook ansible-playbook -i ./hosts.ini test.yml
 
 
-Настройка ssh config: 
+Настройка доступа по ssh через ssh config: 
 ~/.ssh/config
 
-Host 51.250.12.163
+Host 51.250.12.163  #адрес вашего бастиона
    User user
 
 Host 10.0.*
