@@ -18,4 +18,4 @@ Host 10.0.*
         User user
 ```
 
-Или более простой пример ssh -J <jump server> <remote server>
+Или более простой для понимания, но мнее удобный для частого применения: ssh -J <jump server> <remote server>
