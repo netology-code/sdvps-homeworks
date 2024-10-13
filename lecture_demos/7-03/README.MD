@@ -9,10 +9,11 @@
 
 Настройка доступа по ssh через ssh config: 
 ~/.ssh/config
-
+```
 Host 51.250.12.163  #адрес вашего бастиона
    User user
 
 Host 10.0.*
         ProxyJump 51.250.12.163
         User user
+```
