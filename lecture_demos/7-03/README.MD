@@ -17,3 +17,5 @@ Host 10.0.*
         ProxyJump 51.250.12.163
         User user
 ```
+
+Или более простой пример ssh -J <jump server> <remote server>
