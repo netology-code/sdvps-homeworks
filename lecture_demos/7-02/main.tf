@@ -31,3 +31,7 @@ resource "docker_container" "wordpress" {
   }
 }
 
+resource "local_file" "xxx" {
+  content  = "our-cool-project-${var.containers.wordpress.name}"
+  filename = "/tmp/xxx.txt"
+}
