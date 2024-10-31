@@ -5,10 +5,10 @@ data "yandex_compute_image" "ubuntu_2204_lts" {
 }
 
 resource "yandex_compute_instance" "bastion" {
-  name        = "bastion"  #Имя ВМ в облачной консоли
+  name        = "bastion" #Имя ВМ в облачной консоли
   hostname    = "bastion" #формирует FDQN имя хоста, без hostname будет сгенрировано случаное имя.
-  platform_id = "standard-v1"
-  zone        = "ru-central1-a"  #зона ВМ должна совпадать с зоной subnet!!!
+  platform_id = "standard-v3"
+  zone        = "ru-central1-a" #зона ВМ должна совпадать с зоной subnet!!!
 
   resources {
     cores         = 2
@@ -32,18 +32,19 @@ resource "yandex_compute_instance" "bastion" {
   scheduling_policy { preemptible = true }
 
   network_interface {
-    subnet_id = yandex_vpc_subnet.develop_a.id #зона ВМ должна совпадать с зоной subnet!!!
-    nat       = true
+    subnet_id          = yandex_vpc_subnet.develop_a.id #зона ВМ должна совпадать с зоной subnet!!!
+    nat                = true
+    security_group_ids = [yandex_vpc_security_group.LAN.id, yandex_vpc_security_group.bastion.id]
   }
 }
 
 
 resource "yandex_compute_instance" "web_a" {
-  name        = "web-a"  #Имя ВМ в облачной консоли
+  name        = "web-a" #Имя ВМ в облачной консоли
   hostname    = "web-a" #формирует FDQN имя хоста, без hostname будет сгенрировано случаное имя.
-  platform_id = "standard-v1"
+  platform_id = "standard-v3"
   zone        = "ru-central1-a" #зона ВМ должна совпадать с зоной subnet!!!
-    
+
 
   resources {
     cores         = 2
@@ -67,16 +68,16 @@ resource "yandex_compute_instance" "web_a" {
   scheduling_policy { preemptible = true }
 
   network_interface {
-    subnet_id = yandex_vpc_subnet.develop_a.id
-    nat       = false
-    security_group_ids = [yandex_vpc_security_group.LAN.id]
+    subnet_id          = yandex_vpc_subnet.develop_a.id
+    nat                = false
+    security_group_ids = [yandex_vpc_security_group.LAN.id, yandex_vpc_security_group.web_sg.id]
   }
 }
 
 resource "yandex_compute_instance" "web_b" {
-  name        = "web-b"  #Имя ВМ в облачной консоли
+  name        = "web-b" #Имя ВМ в облачной консоли
   hostname    = "web-b" #формирует FDQN имя хоста, без hostname будет сгенрировано случаное имя.
-  platform_id = "standard-v1"
+  platform_id = "standard-v3"
   zone        = "ru-central1-b" #зона ВМ должна совпадать с зоной subnet!!!
 
   resources {
@@ -101,15 +102,15 @@ resource "yandex_compute_instance" "web_b" {
   scheduling_policy { preemptible = true }
 
   network_interface {
-    subnet_id = yandex_vpc_subnet.develop_b.id
-    nat       = false
-    security_group_ids = [yandex_vpc_security_group.LAN.id]
+    subnet_id          = yandex_vpc_subnet.develop_b.id
+    nat                = false
+    security_group_ids = [yandex_vpc_security_group.LAN.id, yandex_vpc_security_group.web_sg.id]
 
   }
 }
 
 resource "local_file" "inventory" {
-  content  = <<-EOF
+  content  = <<-XYZ
   [bastion]
   ${yandex_compute_instance.bastion.network_interface.0.nat_ip_address}
 
@@ -118,7 +119,7 @@ resource "local_file" "inventory" {
   ${yandex_compute_instance.web_b.network_interface.0.ip_address}
   [webserer:vars]
   ansible_ssh_common_args='-o ProxyCommand="ssh -p 22 -W %h:%p -q user@${yandex_compute_instance.bastion.network_interface.0.nat_ip_address}"'
-  EOF
+  XYZ
   filename = "./hosts.ini"
 }
 

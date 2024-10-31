@@ -66,7 +66,7 @@ resource "yandex_vpc_security_group" "LAN" {
   ingress {
     description    = "Allow 10.0.0.0/8"
     protocol       = "ANY"
-    v4_cidr_blocks = ["10.0.0.0/0"]
+    v4_cidr_blocks = ["10.0.0.0/8"]
     from_port      = 0
     to_port        = 65535
   }

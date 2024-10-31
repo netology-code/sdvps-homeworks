@@ -9,7 +9,7 @@
   pre_tasks:
     - name: Validating the ssh port is open and
       wait_for:
-        host: '{{ (ansible_ssh_host|default(ansible_host))|default(inventory_hostname) }}'
+        host: "{{ (ansible_ssh_host|default(ansible_host))|default(inventory_hostname) }}"
         port: 22
         delay: 5
         timeout: 300
