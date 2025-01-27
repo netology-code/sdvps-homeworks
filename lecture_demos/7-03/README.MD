@@ -4,6 +4,7 @@
 4. Изменить ssh-ключ в файле cloud-init.yml (ssh-keygen -t ed25519). cp terraformrc ~/.terraformrc
 5. terraform init && terraform apply
 6. rm ~/.ssh/known_hosts. Выполнить playbook ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i ./hosts.ini test.yml
+7. По окончании выполнить terraform destroy
 
 https://www.jeffgeerling.com/blog/2022/using-ansible-playbook-ssh-bastion-jump-host
 
