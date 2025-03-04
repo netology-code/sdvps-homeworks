@@ -4,10 +4,4 @@
 
 for linux: cp terraformrc ~/.terraformrc
 
-
-![alt text for screen readers](https://marinegeo.github.io/assets/img/MarineGEO_logo.png "Text to show on mouseover")
-
-![alt text](https://github.com/netology-code/sdvps-homework/blob/main/lecture_demos/7-02/1.jpg?raw=true)
-
-
-![alt text for screen readers](/1.jpg "example")
+![Alt text](relative%201.jpg?raw=true "Title")
