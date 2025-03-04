@@ -7,3 +7,4 @@ for linux: cp terraformrc ~/.terraformrc
 
 ![alt text for screen readers](https://marinegeo.github.io/assets/img/MarineGEO_logo.png "Text to show on mouseover")
 
+![alt text for screen readers](/1.jpg "example")
