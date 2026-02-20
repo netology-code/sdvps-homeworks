@@ -40,9 +40,12 @@ curl http://127.0.0.1:9091/metrics
 docker restart prometheus
 docker rm -f $(docker ps -a -q)
 
+Для изучения YAML:
 https://grafana.com/grafana/dashboards/1860-node-exporter-full/
 https://www.yamllint.com/
 https://guifier.com/yaml
 https://github.com/samber/awesome-prometheus-alerts
+https://github.com/adavesik/compoviz
+https://github.com/maliknajjar/guifier/blob/main/docker-compose.yml
 
 docker container rm -f prometheus && docker container rm -f node_exporter && docker container rm -f pushgateway && docker container rm -f grafana && docker container rm -f alertmanager
